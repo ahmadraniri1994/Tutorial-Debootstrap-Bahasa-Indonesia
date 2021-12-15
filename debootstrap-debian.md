@@ -35,8 +35,7 @@
 
 > $ sudo mkfs.ext4 /dev/abc1
 
-> $ sudo mkfs.vfat -F 32 /dev/abc2 
-\
+> $ sudo mkfs.vfat -F 32 /dev/abc2
 
 2. **Mount filesystem.**
 
