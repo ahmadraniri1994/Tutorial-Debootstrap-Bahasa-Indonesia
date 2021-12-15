@@ -35,9 +35,7 @@
 
 > $ sudo mkfs.ext4 /dev/abc1
 
-> $ sudo mkfs.vfat -F 32 /dev/abc2
-
-
+> $ sudo mkfs.vfat -F 32 /dev/abc2 \
 
 2. **Mount filesystem.**
 
@@ -45,9 +43,7 @@
 
 > $ sudo mkdir -p /mnt/boot/efi
 
-> $ sudo mount /dev/abc2 /mnt/boot/efi
-
-
+> $ sudo mount /dev/abc2 /mnt/boot/efi 
 
 3. **Memasang base system.**
 
