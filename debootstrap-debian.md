@@ -37,7 +37,7 @@
 
 > $ sudo mkfs.vfat -F 32 /dev/abc2
 
-$~$
+
 
 2. **Mount filesystem.**
 
@@ -47,7 +47,7 @@ $~$
 
 > $ sudo mount /dev/abc2 /mnt/boot/efi
 
-$~$
+
 
 3. **Memasang base system.**
 
@@ -55,7 +55,7 @@ $~$
 	
 > $ sudo debootstrap --arch amd64 stable /mnt https://deb.debian.org/debian
 
-$~$
+
 
 4. **Masuk chroot.**
 
@@ -71,7 +71,7 @@ $~$
 
 > $ sudo chroot /mnt /bin/bash
 
-$~$
+
 
 5. **Edit fstab.**
 
@@ -91,7 +91,7 @@ Contoh :
 
 > UUID=9e484c2f-c74a-4865-a49b-a5b71a5ee220 none            swap    sw              0       0
 
-$~$
+
 
 6. **Konfigurasi source apt.**
 
@@ -108,13 +108,13 @@ Contoh isi sources.list :
 - Debian unstable
 > deb http://deb.debian.org/debian/ sid main contrib non-free
 
-$~$
+
 
 7. **Memilih zona waktu.**
 
 > dpkg-reconfigure tzdata
 
-$~$
+
 
 8. **Konfigurasi locales.**
 
@@ -122,25 +122,25 @@ $~$
 
 > dpkg-reconfigure locales 
 
-$~$
+
 
 9. **Memasang kernel.**
 
 > apt install linux-image-amd64
 
-$~$
+
 
 10. **Memasang firmware (bisa opsional).**
 
 > apt install firmware-linux
 
-$~$
+
 
 11. **Set hostname.**
 
 > echo "Nama_hostname" > /etc/hostname
 
-$~$
+
 
 12. **Konfigurasi jaringan.**
 
@@ -151,7 +151,7 @@ Contoh isi file interfaces sederhana (koneksi utama dari ethernet) :
 > auto eth0 \
 iface eth0 inet dhcp
 
-$~$
+
 
 13. **Memasang paket bootloader.**
 	
@@ -163,20 +163,20 @@ $~$
 
 >apt install grub-efi-amd64 
 
-$~$
+
 
 14. **Mengatur password root.**
 
 > passwd 
 
-$~$
+
 
 15. **Membuat user dan passwordnya.**
 
 > useradd USERNAME -m \
 > passwd USERNAME
 
-$~$
+
 
 16. **Memasang bootloader pada disk.**
 
@@ -191,13 +191,13 @@ $~$
 > grub-install --target=x86_64-efi --efi-directory=/boot/efi \
 update-grub
 
-$~$
+
 
 17. **Keluar chroot.**
 
 > exit
 
-$~$
+
 
 18. **Unmount beberapa filesystem.**
 
@@ -211,13 +211,13 @@ $~$
 
 > $ sudo umount /mnt 
 
-$~$
+
 
 19. **Reboot.**
 
 > $ sudo systemctl reboot
 
-$~$
+
 
 20. **Paket-paket rekomendasi.**
 
