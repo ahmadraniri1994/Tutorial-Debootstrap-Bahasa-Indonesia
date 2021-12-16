@@ -162,7 +162,7 @@ iface eth0 inet dhcp
 
 >apt install grub-efi-amd64 
 
-<<br>
+<br>
 
 14. **Mengatur password root.**
 
