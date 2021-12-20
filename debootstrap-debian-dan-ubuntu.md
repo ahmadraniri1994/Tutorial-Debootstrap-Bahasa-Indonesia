@@ -1,4 +1,4 @@
-# **Memasang Debian dengan metode Debootstrap**.
+# **Memasang Debian dan Ubuntu Dengan Metode Debootstrap**.
 
 ## **Langkah-langkah**
 
