@@ -113,6 +113,13 @@ Contoh isi sources.list :
 > deb http://deb.debian.org/debian/ sid main contrib non-free
 
 <br>
+- Ubuntu impish
+> deb http://buaya.klas.or.id/ubuntu/ impish main restricted universe multiverse
+> deb http://buaya.klas.or.id/ubuntu/ impish-updates main restricted universe multiverse
+> deb http://buaya.klas.or.id/ubuntu/ impish-security main restricted universe multiverse
+> deb http://buaya.klas.or.id/ubuntu/ impish-backports main restricted universe multiverse
+> deb http://buaya.klas.or.id/ubuntu/ impish-proposed main restricted universe multiverse
+
 
 7. **Memilih zona waktu.**
 
