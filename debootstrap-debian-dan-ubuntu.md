@@ -67,11 +67,11 @@
 
 > $ sudo mount -t proc proc proc/
 
-> $ sudo mount --rbind /sys sys/
+> $ sudo mount -o bind /sys sys/
 
-> $ sudo mount --rbind /dev dev/
+> $ sudo mount -o bind /dev dev/
 
-> $ sudo mount --rbind /run run/
+> $ sudo mount -o bind /run run/
 
 > $ sudo chroot /mnt /bin/bash
 
